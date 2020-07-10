@@ -1,0 +1,13 @@
+<!--Header Start-->
+<app-header *ngIf="router.url!='/'"></app-header>
+<!--Header End-->
+
+<!--Routing Page-->
+<div class="flex-row">
+  <section id="main">
+    <div class="page-content">
+      <router-outlet></router-outlet>
+    </div>
+  </section>
+</div>
+<!--End of Routing Page-->

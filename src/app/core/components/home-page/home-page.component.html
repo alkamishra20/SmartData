@@ -1,0 +1,19 @@
+<!-- global save popup -->
+<mat-card *ngIf='globalSaveToggle' class="global-save"> <button mat-stroked-button (click)='cancel()'>
+    CANCEL</button>&nbsp;
+  <button mat-raised-button (click)="globalSave()"> SAVE</button>
+</mat-card>
+<!-- end of global save popup -->
+
+<!-- customer list -->
+<mat-card class="card-box">
+  <mat-card-content>
+    <div class="card-content-title">List Of Customers</div>
+  </mat-card-content>
+  <br>
+  <div>
+    <app-list-table [displayedColumns]='displayedColumn' [tableData]='userList'>
+    </app-list-table>
+  </div>
+</mat-card>
+<!-- end of customer list -->

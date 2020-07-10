@@ -1,0 +1,18 @@
+<!-- header -->
+<div class="primary">
+  <div class="pos_fix">
+    <div class="tool-bar">
+      <div class="tool-bar-left">
+        <div class="example-sidenav-content">
+          <button id="mat-button-menu" type="button" mat-button>
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div>
+        <div class="ms-name " [routerLink]="['/home']">Smart Data</div>
+      </div>
+      <div class="ms-name " *ngIf="loggedUser">Logged In As -
+        {{loggedUser}}
+      </div>
+    </div>
+  </div>
+  <!-- end of header -->

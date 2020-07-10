@@ -1,0 +1,40 @@
+@import 'src/styles/_variables';
+
+.primary {
+  position: fixed;
+  z-index: 10;
+  height: 5em;
+  width: 100%;
+  background-color: $sdt-primary;
+  color: #fff; //margin-bottom: 80px;
+
+  button {
+    text-transform: capitalize !important;
+  }
+}
+
+.pos_fix {
+  position: fixed; //top: 3rem;
+  width: 100%; //z-index: 200;
+  padding-top: 20px;
+}
+
+.tool-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .example-sidenav-content {
+    margin-right: 10px;
+  }
+
+  .ms-name {
+    font-size: 1.5rem;
+    margin-right: 35px;
+  }
+
+  .ms-name:hover {
+    cursor: pointer;
+  }
+}

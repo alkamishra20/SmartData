@@ -1,0 +1,11 @@
+---
+applications:
+- name: ui-ewd-stage-v002
+  memory: 1G
+  instances: 1
+  buildpack: staticfile_buildpack
+  stack: cflinuxfs3
+  path: ./dist/skill-dev/
+  services:
+    - sdt-registry
+

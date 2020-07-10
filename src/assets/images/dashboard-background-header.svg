@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="314px" height="65px" viewBox="0 0 314 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10,2.41119017e-10 L76.0729728,3.42740769e-09 C79.1709531,3.57680028e-09 82.0939973,1.43584532 83.987555,3.88776724 L94.5365084,17.5473515 L280,17.5473515 C282.761424,17.5473515 285,19.7859278 285,22.5473515 L285,31 L5,31 L5,5 C5,2.23857625 7.23857625,5.07265313e-16 10,0 Z" id="path-1"/>
+        <filter x="-9.3%" y="-80.6%" width="118.6%" height="267.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="8.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"/>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="project_card" transform="translate(12.000000, 16.000000)">
+            <g id="Group-3">
+                <g id="Group-Copy">
+                    <g id="Group-4">
+                        <g id="Rectangle">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"/>
+                            <path stroke="#E5E5E4" stroke-width="1" d="M5.5,30.5 L284.5,30.5 L284.5,22.5473515 C284.5,20.0620702 282.485281,18.0473515 280,18.0473515 L94.2909006,18.0473515 L83.5918259,4.19337887 C81.7929461,1.86405305 79.0160541,0.500000004 76.0729728,0.500000003 L10,0.5 C7.51471863,0.5 5.5,2.51471863 5.5,5 L5.5,30.5 Z" stroke-linejoin="square" fill="white" fill-rule="evenodd"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

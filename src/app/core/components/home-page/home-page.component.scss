@@ -1,0 +1,40 @@
+@import 'src/styles/_variables';
+
+.card-box {
+   top: -15px;
+   border-radius: 10px;
+  mat-card-content {
+    display: flex;
+  }
+}
+
+.card-content-title {
+  font-size: 20px;
+  color: #404040;
+  width: 170px;
+}
+
+.mat-card {
+  height: 32rem;
+  margin-top: 45px;
+  box-shadow: 0 3px 1px -2px #cbdca9, 0 2px 2px 0 #cbdca9, 0 1px 5px 0 #cbdca9 !important;
+  .card-content-title{
+    color: $sdt-primary;
+  }
+}
+
+.global-save {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  margin-top: 81vh;
+  z-index: 1;
+  margin-left: -177px;
+  .mat-card {
+    height: unset;
+  margin-top: unset;
+    box-shadow: 7px 20px 18px 7px rgba(0, 0, 0, .2), 6px 11px 10px 7px rgba(0, 0, 0, .14), 0 2px 11px 11px rgba(0, 0, 0, .12) !important;
+  }
+}
+
+

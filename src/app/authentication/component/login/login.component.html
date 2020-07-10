@@ -1,0 +1,39 @@
+<!--Login Component-->
+<div class="login-container">
+  <mat-card class="card">
+    <mat-card-title>Login</mat-card-title>
+    <hr class="header-divider">
+    <form [formGroup]="loginForm">
+
+      <!-- mail id field -->
+      <mat-form-field class="form-input m-t-2">
+        <input matInput placeholder="Email Id" name="Email Id" type="Email" formControlName="emailId" [required]="true">
+        <mat-icon matSuffix>mail</mat-icon>
+        <mat-error class="font-md">
+          <span *ngIf="loginForm.get('emailId').hasError('required')">Email Id is required</span>
+        </mat-error>
+      </mat-form-field>
+      <!-- end of mail id field -->
+
+      <!-- password field -->
+      <mat-form-field class="form-input m-t-1 m-b-2">
+        <input matInput autocomplete="off" name="password" placeholder="Password" [type]="hide ? 'password' : 'text'"
+          formControlName="password" [required]="true">
+        <mat-icon class="cursor-pointer" matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}
+        </mat-icon>
+        <mat-error class="font-md">
+          Password is required
+        </mat-error>
+      </mat-form-field>
+      <!-- end of password field -->
+
+      <!-- login action button -->
+      <div class="login-action">
+        <button mat-raised-button color="primary" [disabled]='!loginForm.valid' (click)="login()">login</button>
+      </div>
+      <!-- end of login action button -->
+      
+    </form>
+  </mat-card>
+</div>
+<!--End of Login Component-->

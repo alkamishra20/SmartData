@@ -1,0 +1,13 @@
+
+// 50: #f5fbe9, 100: #e6f9be, 200: #c1e27d, 300: #ade046, 400: #84bb15, 500: #74AD00, 600: #6da005, 700: #639007, 800: #5b820b, 900: #415f06, A100: #e6f9be, A200: #c1e27d, A400: #ade046, A700: #84bb15
+// Import Angular Material theming mixins and override colors and font
+@import '~@angular/material/theming';
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// **Be sure that you only ever include this mixin once!**
+@include mat-core();
+$my-theme-primary: mat-palette($mat-green);
+$my-theme-accent: mat-palette($mat-amber);
+$my-theme-warn: mat-palette($mat-red);
+$my-theme: mat-light-theme( $my-theme-primary, $my-theme-accent, $my-theme-warn);
+@include angular-material-theme($my-theme);
